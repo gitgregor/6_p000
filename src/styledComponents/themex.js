@@ -7,7 +7,6 @@ const theme = {
     width: "90vh",
     padding: "5vh",
     border: "2px solid red",
-    
   };
   
   export default theme;

@@ -1,18 +1,3 @@
-// import React from 'react';
-// import GlobalStyles from './styledComponents/GlobalStyles';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <GlobalStyles />
-//       <h1>Theming with Styled Components</h1>
-//     </div>
-//   );
-// }
-
-// export default App
-
-//==================================================
 
 import React from 'react';
 
@@ -28,6 +13,7 @@ import HighStockPlotBands from './P_004/Charts/HighStockPlotBands/HighStockPlotB
 import FHighStockPlotBandsF from './P_004/Charts/HighStockPlotBands/F_HighStockPlotBands_F'
 import Paper from './P_004/Apis/paper/Paper'
 import Randomizer from './P_004/Apis/randomizer/RandomApi'
+import Provider004 from './P_004/Providers/Provider004'
 
 const Container = styled.div`
 display: flex;
@@ -45,19 +31,21 @@ justify-content: center;
 `
 
 function App() {
-  return (
-    <ThemeProvider theme={theme}>
+    return (
+        <ThemeProvider theme={theme}>
       <div className="App">
         <GlobalStyleswithTheme />
         <Wrapper>
         <Container>
         <h1>hooks</h1>
 {/* <AppCtnxReducer/> */}
-<MainComponent />
+{/* <MainComponent /> */}
 {/* <HighStockPlotBands /> */}
+<Provider004>
 <FHighStockPlotBandsF />
-{/* <Paper />
-<Randomizer /> */}
+</Provider004>
+{/* <Paper /> */}
+{/* <Randomizer /> */}
         </Container>
         </Wrapper>
       </div>
@@ -66,3 +54,24 @@ function App() {
 }
 
 export default App
+
+
+
+
+
+
+//==================================================
+
+// import React from 'react';
+// import GlobalStyles from './styledComponents/GlobalStyles';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <GlobalStyles />
+//       <h1>Theming with Styled Components</h1>
+//     </div>
+//   );
+// }
+
+// export default App

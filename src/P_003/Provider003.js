@@ -5,8 +5,10 @@ import reducer, {initialState} from './reducer'
 
 export const Context = createContext()
 
-const Provider = ({children}) => {
 
+
+
+const Provider = ({children}) => {
 const [state, dispatch] = useReducer(reducer, initialState)
 
 const actions = {

@@ -146,12 +146,14 @@ const plotOptions = {
               {/* <FlagsSeries id="events" onSeries="unitSales" data={notableEvents} /> */}
             </YAxis>
 
-            {/* <Navigator>
+            <Navigator>
               <Navigator.Series seriesId="unitSales" />
-              <Navigator.XAxis labels={{ x: 0, y: 12 }}>
-                {campaigns.map(this.renderNavPlotBand)}
+              <Navigator.XAxis >
+              {/* <Navigator.XAxis labels={{ x: 5, y: 100 }}> */}
+              {/* <Navigator.XAxis labels={{ x: 0, y: 12 }}> */}
+                {campaigns.map(renderNavPlotBand)}
               </Navigator.XAxis>
-            </Navigator> */}
+            </Navigator>
           </HighchartsStockChart>
         </HighchartsProvider>
       </div>

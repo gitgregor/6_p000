@@ -14,6 +14,8 @@ import FHighStockPlotBandsF from './P_004/Charts/HighStockPlotBands/F_HighStockP
 import Paper from './P_004/Apis/paper/Paper'
 import Randomizer from './P_004/Apis/randomizer/RandomApi'
 import Provider004 from './P_004/Providers/Provider004'
+import SpineLineWithPlotBands from './P_004/ZZZ_COMPONENTS_STORE/SpineLineWithPlotBands'
+import SplinePlotBandsChart_PL from './P_004/ZZZ_COMPONENTS_STORE/SplinePlotBandsChart_PL'
 
 const Container = styled.div`
 display: flex;
@@ -43,6 +45,8 @@ function App() {
 {/* <HighStockPlotBands /> */}
 <Provider004>
 <FHighStockPlotBandsF />
+<SpineLineWithPlotBands/>
+<SplinePlotBandsChart_PL />
 </Provider004>
 {/* <Paper /> */}
 {/* <Randomizer /> */}

@@ -5,15 +5,15 @@ import {
   HighchartsChart, Chart, HighchartsProvider, XAxis, YAxis, Title, Legend, ColumnSeries, SplineSeries, PieSeries, Tooltip
 } from 'react-jsx-highcharts';
 
-import  '../../../../../styles/highcharts.css'
+// import  '../../../../../styles/highcharts.css'
 
 // import  '../../../../../styles/org.css'
 
 
 const status = {
-    category1: 'ini',
-    category2: 'fck',
-    category3: 'kind a'
+    category1: 'Uuu',
+    category2: 'Aaa',
+    category3: 'Ahhh...'
 }
 
 const name = {
@@ -27,13 +27,13 @@ const data = {
 
 
 const pieData = [{
-        name: 'inicjalizacja',
+        name: 'uuu',
         y: 6
       }, {
-        name: 'błąd',
+        name: 'Aaa',
         y: 2
       }, {
-        name: 'incydent',
+        name: 'Ahhh....',
         y: 1
       }];
     
@@ -67,7 +67,7 @@ const Combo = () => {
             <HighchartsProvider Highcharts={Highcharts}>
                 <HighchartsChart>
                     <Chart />
-                    <Title>Statusy Xraya</Title>
+                    <Title>Statusy  X'a</Title>
                     <Legend />
                     <XAxis categories={[status.category1, status.category2, status.category3]} />
                     <YAxis>
@@ -98,7 +98,7 @@ const Combo = () => {
                             /> */}
                         </SplineSeries>
 
-                        {/* <PieSeries name="Total" data={pieData} center={[100, 80]} size={50} showInLegend={false} /> */}
+                        <PieSeries name="Total" data={pieData} center={[100, 80]} size={50} showInLegend={false} />
                     </YAxis>
                 </HighchartsChart>
             </HighchartsProvider>

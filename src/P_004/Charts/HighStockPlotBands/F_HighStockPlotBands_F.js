@@ -96,7 +96,7 @@ const plotOptions = {
 
    const campaigns = [
                 {
-                  from: array[1][0],
+                  from: array[0][0],
                   to:  array[5][0],
                 //   from: unitSales[9][0],
                 //   to: unitSales[23][0],

@@ -16,6 +16,8 @@ import Randomizer from './P_004/Apis/randomizer/RandomApi'
 import Provider004 from './P_004/Providers/Provider004'
 import SpineLineWithPlotBands from './P_004/ZZZ_COMPONENTS_STORE/SpineLineWithPlotBands'
 import SplinePlotBandsChart_PL from './P_004/ZZZ_COMPONENTS_STORE/SplinePlotBandsChart_PL'
+import Layout from './P_005/COMPONENTS/GridLayout/Layout'
+import FlexMainContainer from './P_005/COMPONENTS/FlexMainLayouts/FlexMainContainer'
 
 const Container = styled.div`
 display: flex;
@@ -23,6 +25,11 @@ flex-direction: column;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
+// background:  conic-gradient(#fff, #000);
+background-image: linear-gradient(to bottom right, #fff, #000);
+// background-image: linear-gradient(to bottom right, red, yellow);
+// background-image: linear-gradient(to bottom lightgreen, green, darkgreen);
+border-radius:50px;
 `
 const Wrapper = styled.div`
 display: flex;
@@ -39,17 +46,25 @@ function App() {
         <GlobalStyleswithTheme />
         <Wrapper>
         <Container>
-        <h1>hooks</h1>
+        <h1>Dashboard</h1>
 {/* <AppCtnxReducer/> */}
 {/* <MainComponent /> */}
 {/* <HighStockPlotBands /> */}
-<Provider004>
+
+
+{/* <Provider004>
 <FHighStockPlotBandsF />
 <SpineLineWithPlotBands/>
 <SplinePlotBandsChart_PL />
-</Provider004>
+</Provider004> */}
+
+
 {/* <Paper /> */}
 {/* <Randomizer /> */}
+
+<FlexMainContainer/>
+{/* <Layout/> */}
+
         </Container>
         </Wrapper>
       </div>

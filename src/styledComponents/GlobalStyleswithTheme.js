@@ -13,7 +13,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${props => props.theme.fontFamily};
     // max-width: ${props => props.theme.width};
     padding: ${props => props.theme.padding};
-    border: ${props => props.theme.border};
+    //border: ${props => props.theme.border};
+    // borderRadius: ${props => props.theme.borderRadius};
 `;
 
 export default GlobalStyles

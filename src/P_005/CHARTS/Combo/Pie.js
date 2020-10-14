@@ -5,7 +5,7 @@ import {
   HighchartsChart, Chart, HighchartsProvider, XAxis, YAxis, Title, Legend, ColumnSeries, SplineSeries, PieSeries, Tooltip
 } from 'react-jsx-highcharts';
 
-import  '../../../../../styles/highcharts.css'
+// import  '../../../../../styles/highcharts.css'
 
 // import  '../../../../../styles/org.css'
 
@@ -14,10 +14,10 @@ const pieData = [{
         name: 'ini',
         y: 6
       }, {
-        name: 'fck',
+        name: 'what de',
         y: 2
       }, {
-        name: 'kind a',
+        name: 'E eee :)',
         y: 1
       }];
     

@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&family=Russo+One&display=swap');
+
+
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    /* border-radius: 50px; */
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: lightseagreen;
+  }
+  
+  .footer {
+    background: lightgreen;
+    border-radius: 0 0 50px 50px ;
+  }
+  
+  .main {
+    text-align: left;
+    background: cadetblue;
+  }
+  
+  .aside-1 {
+    background: olivedrab;
+  }
+  
+  .aside-2 {
+    background: rgb(146, 173, 46);
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  body {
+    padding: 2em; 
+  }
+
+
+  .drop-cap{
+   font-size: 20px;
+   /* font-family: "Roboto"; */
+   /* font-family: "'Russo One', sans-serif"; */
+   font-family: 'Permanent Marker', cursive;
+   font-weight: bold;
+   margin: 30px;
+   text-align: justify;
+    text-indent: 1em;
+} 
+
+.drop-cap:first-child:first-letter {
+    color: #903; 
+    font-family: Georgia;
+    initial-letter: 2;
+    font-size:150%;
+    padding-right:5px;
+   font-family: 'Permanent Marker', cursive;
+
+    /* line-height: 200%; */
+}
+
+/* .drop-cap:first-letter{
+                                  display:block;
+                                  float:left;
+                                  margin:3px;
+                                  color:#f00;
+                                  font-size:3em;
+                                } */

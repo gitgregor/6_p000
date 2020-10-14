@@ -5,15 +5,15 @@ import {
   HighchartsChart, Chart, HighchartsProvider, XAxis, YAxis, Title, Legend, ColumnSeries, SplineSeries, PieSeries, Tooltip
 } from 'react-jsx-highcharts';
 
-import  '../../../../../styles/highcharts.css'
+// import  '../../../../../styles/highcharts.css'
 
 // import  '../../../../../styles/org.css'
 
 
 const status = {
     category1: 'ini',
-    category2: 'fck',
-    category3: 'kind a'
+    category2: 'failed',
+    category3: 'What ???'
 }
 
 const name = {
@@ -67,7 +67,7 @@ const Combo = () => {
             <HighchartsProvider Highcharts={Highcharts}>
                 <HighchartsChart>
                     <Chart />
-                    <Title>Statusy Xraya</Title>
+                    <Title>Statusy  X'a</Title>
                     <Legend />
                     <XAxis categories={[status.category1, status.category2, status.category3]} />
                     <YAxis>
